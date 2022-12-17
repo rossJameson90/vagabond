@@ -1,11 +1,7 @@
 <script>
-	import { supabase } from '../lib/supabaseClient.js';
 	import Header from '$lib/header/Header.svelte';
 	import MobileNav from '../components/MobileNav/MobileNav.svelte';
 	import '../app.css';
-
-	supabase;
-	console.log(supabase);
 
 	$: outerWidth = 0;
 	$: innerWidth = 0;

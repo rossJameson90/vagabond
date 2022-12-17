@@ -1,6 +1,6 @@
-<script>
+<!-- <script>
     import { createEventDispatcher } from 'svelte';
-    import { supabase } from '$lib/supabaseClient'
+    // import { supabase } from '$lib/supabaseClient'
   
     export let path;
     export let size = "10em"
@@ -11,16 +11,16 @@
   
     const dispatch = createEventDispatcher();
   
-    async function downloadImage() {
-      try {
-        const { data, error } = await supabase.storage.from('avatars').download(path)
-        if (error) throw error
+    // async function downloadImage() {
+    //   try {
+    //     const { data, error } = await supabase.storage.from('avatars').download(path)
+    //     if (error) throw error
         
-        src = URL.createObjectURL(data)
-      } catch (error) {
-        console.error('Error downloading image: ', error.message)
-      }
-    }
+    //     src = URL.createObjectURL(data)
+    //   } catch (error) {
+    //     console.error('Error downloading image: ', error.message)
+    //   }
+    // }
   
     async function uploadAvatar() {
       try {
@@ -77,4 +77,4 @@
         disabled={uploading}
       />
     </div>
-  </div>
+  </div> -->
